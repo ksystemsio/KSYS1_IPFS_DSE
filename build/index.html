@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="K SYS 1 IPFS Data Storage Engine - K SYS 1 DSE" />
+    <meta property="og:description" content="Decentralized Storage Application by K Systems" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <script type="text/javascript">
+        function startTime() {
+            var e = new Date,
+                n = e.getHours(),
+                c = e.getMinutes(),
+                i = e.getSeconds();
+            c = checkTime(c), i = checkTime(i), document.getElementById("txt").innerHTML = n + ":" + c + ":" + i, t = setTimeout("startTime()", 500)
+        }
+
+        function checkTime(e) {
+            return e < 10 && (e = "0" + e), e
+        }
+    </script>
+    <script>
+        function goBack() {
+            window.history.back()
+        }
+    </script>
+    <title>K SYS 1 IPFS Data Storage Engine - K SYS 1 DSE</title>
+    <link href="./static/css/main.3c82d03e.css" rel="stylesheet">
+</head>
+
+<body onload="startTime()">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <center>
+        <p></p>
+        <h3>Current Time:<span id="txt"></span></h3>
+        <p></p>
+    </center>&nbsp;
+    <center><span><body>
+        <center><input id="text" value="https://ipfs.io/ipfs/<PASTE YOUR IPFS HASH HERE AND PRESS ENTER TO GET YOUR QR CODE>" style="width:40%" /><br /><div id="qrcode" style="width:100px;height:100px;margin-top:15px"></div></center>
+        <script type="text/javascript">var qrcode = new QRCode(document.getElementById("qrcode"), { width: 100, height: 100 }); function makeCode() { var e = document.getElementById("text"); if (!e.value) return alert("Input a text"), void e.focus(); qrcode.makeCode(e.value) } makeCode(), $("#text").on("blur", function () { makeCode() }).on("keydown", function (e) { 13 == e.keyCode && makeCode() })</script>&nbsp;
+        <script type="text/javascript" src="./static/js/main.2022b525.js"></script>
+    </body></span><span><p><button onclick="myFunction()">Click to print the Receipt</button></p></span>&nbsp; <span><p><button onclick="goBack()">Go Back</button></p></span></center>
+    <center>
+        <h5>Share on Twitter</h5>
+        <a href="http://twitter.com/home?status=https://ksystems.io/DApps/KSYS1_IPFS/"><img src="twitter.png" alt="KSYS" style="width:42px;height:42px;border:0"></a>
+    </center>
+    <script>
+        function myFunction() {
+            window.print()
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113448152-1"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-113448152-1")
+    </script>
+</body>
+
+</html>
